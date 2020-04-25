@@ -1,5 +1,6 @@
 body
     margin: 0 auto
+
     font-family: Lato, sans-serif
 
 .container
@@ -16,14 +17,6 @@ body
     background-repeat: no-repeat
     padding-top: 165px
     padding-bottom: 240px
-
-    // @media( min-width: 576px  )
-    //     padding-bottom: 120px
-    //     padding-top: 80px
-
-    // @media( max-width: 575px  )
-    //     padding-bottom: 120px
-    //     padding-top: 80px
 
     &__content
         display: flex
@@ -58,12 +51,6 @@ body
             position: absolute
             height: 2px
             right: 35%
-
-        // @media( min-width: 576px  )
-        //     margin-bottom: 140px
-
-        // // @media( max-width: 575px  )
-        // //     margin-bottom: 140px
 
     &__button
         display: flex
@@ -100,21 +87,14 @@ body
         display: flex
         flex-direction: row
         justify-content: space-between
-        max-width: 970px
+        width: 385/970*100%
         align-items: center
         flex-wrap: wrap
+        padding: 0
 
-        // @media( max-width: 575px  )
-        //     flex-direction: column
-        //     align-items: center
-        //     justify-content: center
 
     &__link
         list-style-type: none
-        padding-right: 40px
-
-        // @media( max-width: 575px  )
-        //     margin-bottom: 10px
 
 
 
@@ -175,17 +155,6 @@ body
         align-items: center
         flex-wrap: wrap
 
-        // @media( min-width: 576px  )
-        //     flex-direction: row
-        //     align-items: center
-        //     justify-content: center
-
-        // @media( max-width: 575px  )
-        //     flex-direction: row
-        //     align-items: center
-        //     justify-content: center
-            
-
     &__column
         display: flex
         flex-direction: column
@@ -198,12 +167,6 @@ body
     justify-content: space-between
     width: 285px
     height: 220px
-
-    // @media( min-width: 576px  )
-    //     margin-bottom: 30px
-
-    // @media( max-width: 575px  )
-    //     margin-bottom: 30px
 
     &__icon
         margin-bottom: 70px
@@ -382,12 +345,13 @@ body
         align-items: flex-start
         justify-content: space-between
         height: 195px
-        max-width: 245px
+        width: 245/710*100%
 
     &__message
         color: #000000
         font-size: 14px
         font-weight: 400
+        margin: 0
 
     &__name
         font-size: 14
@@ -408,7 +372,7 @@ body
         justify-content: space-between
         flex-direction: column
         align-items: center
-        max-width: 380px
+        width: 385/710*100%
 
 
     &__btn 
@@ -435,34 +399,31 @@ body
         flex-direction: row
         align-items: center
         justify-content: space-between
-        width: 380px
+        width: 100%
+    
+.input__item
+    width: 160/385*100%
 
-        p
-            text-transform: uppercase
-            font-size: 14px
-            font-weight: 800
-            color: #000
+    input
+        height: 35px
+        border: none
+        width: 100%
+        border-top: 1px solid #000000
+        background-color: #f8f7f7
 
-        input
-            height: 35px
-            max-width: 160px
-            border: none
-            border-top: 1px solid #000000
-            background-color: #f8f7f7
+.input-item__title
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 800
+    color: #000
 
 .message__item
     display: flex
     flex-direction: column
     align-items: flex-start
     justify-content: space-between
-    width: 380px
+    width: 380/385*100%
     margin-bottom: 45px
-
-    p
-        text-transform: uppercase
-        font-size: 14px
-        font-weight: 800
-        color: #000
 
     textarea
         height: 120px
@@ -512,6 +473,169 @@ body
         font-size: 14px
 
 
+@media screen and ( max-width: 992px )
+    .tab__content_selected
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
 
+@media screen and ( max-width: 768px )
+    .nav__links
+        width: 385/738*100%
+    
+    .about
+        padding-top: 70px
+        padding-bottom: 30px
+    
+        &__row
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
 
+        &__column
+            justify-content: space-between
+            padding: 30px
 
+    .portfolio
+        padding-top: 50px
+        padding-bottom: 30px
+
+        &__title
+            margin-bottom: 45px
+
+        &__tabs
+            margin-bottom: 50px
+
+    .contacts
+        padding-top: 90px
+        padding-bottom: 50px
+
+        &__row
+            flex-direction: column
+            align-items: center
+
+        &__text
+            width: 100%
+            align-items: center
+
+        &__form
+            margin-bottom: 40px
+            width: 100%
+
+    .footer__nav
+        width: 250/738*100%
+
+@media screen and ( max-width: 576px )
+    .main
+        padding-top: 70px
+        padding-bottom: 100px
+
+    .nav__links
+        width: 70%
+
+    .about__title
+        margin-bottom: 35px
+
+    .about__text
+        margin-bottom: 50px
+
+    .tab__content_selected
+        img 
+            width: 75%
+
+    .partners
+        padding-top: 50px
+        padding-bottom: 50px
+
+    .contacts
+        padding-top: 45px
+
+    .footer__nav
+        width: 250/546*100%
+
+@media screen and ( max-width: 480px )
+    .main
+        padding-bottom: 50px
+
+    .main__subtitle
+        margin-bottom: 120px
+
+    .nav__links
+        width: 70%
+    
+    .portfolio__btn
+        width: 25%
+        height: 40px
+        font-size: 12px
+
+    .tab__content_selected
+        img 
+            width: 75%
+
+    .partners__items
+        width: 85%
+
+    .footer__nav
+        width: 250/450*100%
+
+@media screen and ( max-width: 320px )
+    .title
+        font-size: 25px
+    
+    .main
+        padding-top: 35px
+
+        &__logo
+            width: 146px
+
+        &__title
+            
+
+        &__subtitle
+            font-size: 20px
+
+        &__button
+            width: 140px
+            height: 37px
+            font-size: 12px
+
+    .nav__links
+        flex-direction: column
+    
+    .nav__item
+        font-size: 12px
+
+    .about
+        padding-top: 35px
+
+        &__column
+            padding: 30px 0 30px 0
+
+    .tab__content_selected
+        img 
+            width: 290px
+
+    .portfolio__btn
+        width: 140px
+        height: 37px
+        font-size: 12px
+    
+    .partners
+        padding-top: 50px
+        padding-bottom: 50px
+
+        &__items
+            flex-direction: column
+            height: 350px
+        
+        &__title
+            margin-bottom: 40px
+
+    .input-item__title
+        font-size: 12px
+
+    .footer__nav
+        width: 250/290*100%
