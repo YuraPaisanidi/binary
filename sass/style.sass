@@ -115,9 +115,6 @@ body
     padding-top: 130px
     padding-bottom: 100px
 
-    // @media( max-width: 575px )
-    //     padding-top: 20px
-
     &__content
         display: flex
         flex-direction: column
@@ -132,15 +129,6 @@ body
         margin: 0
         margin-bottom: 75px
 
-            // &:after
-            //     content: ""
-            //     width: 81px
-            //     margin-top: 50px
-            //     background-color: #000000
-            //     position: absolute
-            //     height: 1px
-            //     text-align: center
-                    
     &__text
         color: #868585
         font-size: 14px
@@ -180,7 +168,6 @@ body
         color: #868585
         font-size: 14px
         text-align: center
-        margin-bottom: 100px
         line-height: 1.6
 
 // Portfolio
@@ -529,18 +516,44 @@ body
         width: 250/738*100%
 
 @media screen and ( max-width: 576px )
+    .title
+        font-size: 25px
+
     .main
-        padding-top: 70px
-        padding-bottom: 100px
+        padding-top: 50px
+        padding-bottom: 50px
+
+        &__logo
+            width: 146px
+
+        &__subtitle
+            margin-bottom: 120px
+
+        &__button
+            width: 140px
+            height: 37px
+            font-size: 12px
 
     .nav__links
         width: 70%
+
+    .about
+        padding-top: 30px
+        padding-bottom: 0px  
 
     .about__title
         margin-bottom: 35px
 
     .about__text
         margin-bottom: 50px
+
+    .portfolio
+        padding-top: 15px
+
+        &__btn
+            width: 140px
+            height: 37px
+            font-size: 12px
 
     .tab__content_selected
         img 
@@ -552,39 +565,73 @@ body
 
     .contacts
         padding-top: 45px
+        padding-bottom: 25px
 
-    .footer__nav
-        width: 250/546*100%
+        &__title
+            margin-bottom: 60px
+
+    .footer
+        padding-bottom: 20px
+
+        &__nav
+            width: 250/546*100%
 
 @media screen and ( max-width: 480px )
+    .title
+        font-size: 25px
+
     .main
         padding-bottom: 50px
 
-    .main__subtitle
-        margin-bottom: 120px
+        &__subtitle
+            margin-bottom: 50px
+        
+        &__logo
+            width: 146px
+
+        &__button
+            margin-bottom: 35px
 
     .nav__links
-        width: 70%
+        width: 80%
+        justify-content: space-between
+        margin: 5px 0
+
+    .nav__item
+        font-size: 12px
+
+    .item-about__icon
+        margin-bottom: 0px
     
     .portfolio__btn
         width: 25%
         height: 40px
         font-size: 12px
 
+    .portfolio__tabs
+        ul
+            justify-content: space-around
+
     .tab__content_selected
         img 
             width: 75%
 
+    .tab-link
+        font-size: 12px
+
     .partners__items
         width: 85%
+
+    .input-item__title
+        font-size: 12px
 
     .footer__nav
         width: 250/450*100%
 
 @media screen and ( max-width: 320px )
     .title
-        font-size: 25px
-    
+        font-size: 22px
+
     .main
         padding-top: 35px
 
@@ -616,7 +663,18 @@ body
 
     .tab__content_selected
         img 
-            width: 290px
+            width: 75%
+
+    .portfolio__title
+        margin-bottom: 20px
+
+
+    .portfolio__tabs
+        width: 60%
+        margin-bottom: 25px
+
+    .tab-link
+        font-size: 10px
 
     .portfolio__btn
         width: 140px
@@ -634,8 +692,15 @@ body
         &__title
             margin-bottom: 40px
 
+    .contacts
+        padding-top: 25px
+
+        &__title
+            margin-bottom: 30px
+
+
     .input-item__title
-        font-size: 12px
+        font-size: 10px
 
     .footer__nav
         width: 250/290*100%
